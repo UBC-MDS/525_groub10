@@ -16,5 +16,5 @@ The Daily rainfall over NSW, Australia, 1889 - 2014 data contains information li
 
 ## Refrences
 
-Daily rainfall over NSW, Australia (2021). The data retrieved  from: https://figshare.com/articles/dataset/Daily_rainfall_over_NSW_Australia/14096681
-Beuzen, T.(2021). DSCI 525 Example Project: Data Collection. Retrieved from: https://github.ubc.ca/MDS-2020-21/DSCI_525_web-cloud-comp_students/blob/master/get_data.ipynb
+- Daily rainfall over NSW, Australia (2021). The data retrieved  from: https://figshare.com/articles/dataset/Daily_rainfall_over_NSW_Australia/14096681
+- Beuzen, T.(2021). DSCI 525 Example Project: Data Collection. Retrieved from: https://github.ubc.ca/MDS-2020-21/DSCI_525_web-cloud-comp_students/blob/master/get_data.ipynb
