@@ -12,7 +12,7 @@ The purpose of this project is to get exposed to working with large datasets. In
 
 ## License
 
-The Daily rainfall over NSW, Australia, 1889 - 2014 data contains information licensed under the [Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).
+- The Daily rainfall over NSW, Australia, 1889 - 2014 data contains information licensed under the [Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 ## Refrences
 
