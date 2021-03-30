@@ -1,0 +1,18 @@
+name: '525_group10'
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - pyarrow>=3.0.0
+  - pandas>=1.2.3
+  - requests>=2.25.1
+  - r-arrow>=3.0.0
+  - rpy2>=3.4.3
+  - dask>=2021.3.0
+  - pip>=20
+  - urllib3
+  - memory_profiler
+  - r-dplyr
+  - pip:
+    - rpy2-arrow
