@@ -18,12 +18,14 @@ def combine_australia_rainfall(base_folder_path="../data/raw/", method="pandas",
         Path from which file names matching a pattern will be combined 
     method : str
         Specify to use either Pandas (method="pandas") or Dask (method="dask") to combine the csv files.
+    delay_dask_compute: bool
+        Should the Dask dataframe be computed to a Pandas DataFrame to return?
 
 
     Returns
     -------
-    pandas.core.DataFrame  :
-        Pandas DataFrame of all rainfall data.
+    pandas.core.DataFrame or dask.DataFrame :
+        DataFrame of all rainfall data. Pandas DataFrame by default, if method="dask" and delay_dask_compute=True will return a Dask DataFrame.
 
     """
     files = glob.glob(os.path.join(base_folder_path, "*.csv"))
