@@ -9,7 +9,7 @@ import dask.dataframe as dd
 
 def combine_australia_rainfall(base_folder_path="../data/raw/", method="pandas", delay_dask_compute=True):
     """
-    Combines raw csv files for Australia rainfall from a download folder into one csv. 
+    Combines raw csv files for Australia rainfall from a download folder into one csv. Looks for "_NSW.csv" to identify which files to combine.
     Adds `file_name` column and a `model` column with characters before first underscore in filename as the model name.
 
     Parameters
@@ -28,11 +28,11 @@ def combine_australia_rainfall(base_folder_path="../data/raw/", method="pandas",
         DataFrame of all rainfall data. Pandas DataFrame by default, if method="dask" and delay_dask_compute=True will return a Dask DataFrame.
 
     """
-    files = glob.glob(os.path.join(base_folder_path, "*.csv"))
+    files = glob.glob(os.path.join(base_folder_path, "*_NSW.csv"))
 
     if method == "pandas":
         # TODO: Get the regex working here in one step to extract model name
-        df = pd.concat((pd.read_csv(file, index_col=0)
+        df = pd.concat((pd.read_csv(file, index_col=False)
                         .assign(file_name=re.findall("[ \w-]+\.", file)[0],
                                 model=lambda x: x.file_name.str.split("_", expand=True)[0])
                         .drop(columns="file_name")
