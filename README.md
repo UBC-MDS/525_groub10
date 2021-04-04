@@ -8,7 +8,7 @@ Team Members:
 
 ## Introduction
 
-The purpose of this project is to get exposed to working with large datasets. In this project, we aim to build and deploy ensembles machine learning models in the cloud and  compare the output of different climate models to actual observed rainfall. The output is features of different climate models and the target is the actual rainfall observation. The data set for this project is approximately ~12 GB [Daily rainfall over NSW, Australia](https://figshare.com/articles/dataset/Daily_rainfall_over_NSW_Australia/14096681). 
+The purpose of this project is to get exposed to working with large datasets. In this project, we aim to build and deploy an ensemble machine learning model in the cloud and  compare the output of different models to actual observed rainfall. The inputs are predictions of different climate models and the target is the actual rainfall observation. The data set for this project is approximately ~5 GB [Daily rainfall over NSW, Australia](https://figshare.com/articles/dataset/Daily_rainfall_over_NSW_Australia/14096681). 
 
 ## License
 
