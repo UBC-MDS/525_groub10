@@ -13,6 +13,7 @@ jobs:
       - uses: micnncim/action-lgtm-reaction@v0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_COMMENT_BODY: ${{ github.event.comment.body }}
@@ -22,3 +23,4 @@ jobs:
           GITHUB_REVIEW_ID: ${{ github.event.review.id }}
         with:
           trigger: '["^LGTM!?$"]'
+          source: 'giphy'
